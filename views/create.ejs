@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+       
+      <form action="/user_library" method = "post">
+  <p><label for="blog">Enter the text below:</label></p>
+  <textarea id="blog" name="blog" rows="20" cols="180"></textarea>
+  <br>
+  <input type="text" name="blogItem" placeholder="Enter your blog title" required>
+  <button type="submit">Add Blog</button>
+  </form>
+      
+<%- include("partials/footer.ejs") %>

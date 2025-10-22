@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+    <form action="/edit/<%= blog.slug %>" method = "post">
+  <p><label for="blog"><%= blog.title %></label></p>
+  <textarea id="blog" name="blog" rows="20" cols="180">
+    <%= blog.content %>
+  </textarea>
+  <br>
+  <button type="submit">Edit Blog</button>
+  </form>
+
+<%- include("partials/footer.ejs") %>
